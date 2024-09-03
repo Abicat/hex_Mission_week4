@@ -1,0 +1,232 @@
+.content-title {
+  border-left: 8px solid $primary;
+  font-size: 48px;
+  font-weight: bold;
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+
+.store {
+  padding-top: 96px;
+  padding-bottom: 80px;
+
+  &-search {
+    width: calc(33.33% - 16px); //(24*4)/3
+
+    display: flex;
+    margin-bottom: 40px;
+    @include pad {
+        width: 60%;
+      }
+    @include mobile {
+      width: 100%;
+    }
+
+    &-label {
+      font-size: 24px;
+      margin-right: 16px;
+    }
+
+    &-select {
+      font-size: 18px;
+      flex-grow: 1;
+      border-radius: 0px;
+      border: #ced4da 1px solid;
+      color: #495057;
+      padding: 6px 12px;
+      appearance: none;
+      position: relative;
+      background: url(../images/select-arrow.svg);
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-position: 95% center;
+    }
+  }
+
+  &-btn {
+    background: #000;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 19px;
+  }
+}
+
+.store-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  .card {
+    padding-bottom: 48px;
+    width: calc(33.33% - 16px); //(24*4)/3
+    @include pad {
+      padding-bottom: 24px;
+      width: calc(50% - 12px); //24/2
+    }
+    @include mobile {
+      padding-bottom: 24px;
+      width: 100%;
+    }
+
+    &-title {
+      font-size: 24px;
+      border-bottom: solid 1px #00000020;
+      padding: 8px 24px;
+    }
+    &-info {
+      border: solid 1px #00000020;
+    }
+    &-desc {
+      padding: 20px 24px;
+    }
+    &-desc .material-symbols-outlined {
+      margin-right: 8px;
+      font-size: 24px;
+    }
+  }
+}
+
+.store-list .store-desc li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.store-list .store-desc li:not(last-child) {
+  margin-bottom: 8px;
+}
+
+.store-list .store-desc li a{
+  font-size: 20px;
+}
+
+
+//store-map
+.map {
+  padding-top: 96px;
+  padding-bottom: 80px;
+
+  &-body{
+    display: flex;
+    @include pad{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include mobile{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width:42%;
+    padding-right: 24px;
+    @include pad{
+      width: 100%;
+      margin-bottom: 24px;
+      padding-right: 0;
+    }
+    @include mobile {
+      width: 100%;
+      padding-right: 0;
+      font-size: 20px;
+    }
+  }
+}
+
+.map-list .card{
+
+  @include pad{
+    display: flex;
+    width: calc(50% - 12px);
+  }
+
+  @include mobile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+      // @include pad{
+      //   display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        // align-items:stretch;
+      // }
+    // }
+    // @include pad {
+      // width: 100%;
+      // width: calc(50% - 12px);
+    // }
+
+    &-title {
+      font-size: 24px;
+      border-bottom: solid 1px #00000020;
+      padding: 8px 24px;
+    }
+    &-info {
+      border: solid 1px #00000020;
+    }
+    &-desc {
+      padding: 16px 24px;
+    }
+  }
+
+.card-picture img{
+    // display: flex;
+    // align-items:stretch;
+    @include pad{
+      object-fit: cover;
+      height: 100%;
+    }
+}
+
+.map-list .card .card-desc li {
+  display: flex;
+  align-items: flex-start;
+}
+.map-list .card .card-desc li:not(last-child) {
+  margin-bottom: 8px;
+}
+.map-list .card .card-desc li a{
+    font-size: 20px;
+}
+.map-list .card .card-desc .material-symbols-outlined {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.map-iframe{
+  width: 100%;
+  max-width: 58%;
+  margin: 0 auto;
+  position: relative;
+
+  @include pad{
+    width: 100%;
+    max-width: 100%;
+  }
+  @include mobile{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.map-iframe li {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height:100%;
+}
+
+.map-iframe li iframe {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+}

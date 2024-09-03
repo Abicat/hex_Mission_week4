@@ -1,0 +1,44 @@
+.question {
+    padding-top: 96px;
+    padding-bottom: 80px;
+    @include pad{
+        padding-top: 80px;
+    }
+    @include mobile{
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    &-title {
+        font-size: 48px;
+        font-weight: 700; 
+        padding-left: 16px;
+        margin-bottom: 32px;
+        border-left: 8px solid $primary;
+        @include mobile{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &-subtitle {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    &-item h3{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &-item:not(last-child){
+        margin-bottom: 32px;
+        @include mobile{
+            margin-bottom: 24px;
+        }
+    }
+
+
+}
+

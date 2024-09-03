@@ -1,0 +1,27 @@
+// main.scss 統一管理 scss 檔
+// google font
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+// utils 內輔助管理 or 產生樣式的檔案
+@import './helper/variables.scss';
+@import './helper/mixins.scss';
+@import './helper/utils.scss';
+
+// 第三方套件
+// base
+@import "base/reset";
+@import "base/base";
+
+// layout
+@import './layout/grid.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+// components
+
+// pages
+@import './pages/index.scss';
+@import './pages/product.scss';
+@import './pages/store.scss';
+@import './pages/question.scss';

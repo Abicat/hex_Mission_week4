@@ -1,0 +1,45 @@
+/* utilities */
+
+// 字體樣式
+.text-italic {
+    font-style: italic;
+  }
+
+// 文字顏色
+.text-white {
+    color: white;
+  }
+
+// 背景顏色
+.bg-light{
+    background: $bg-light;
+}
+
+.bg-primary{
+    background: $primary;
+}
+
+
+// Flex 排版
+.d-flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+//最高優先
+.pr-0 {
+    padding-right: 0 !important;
+  }
+  
+.pl-0 {
+    padding-left: 0 !important;
+}
+  
+// Flex 間距
+.gap-2{
+    gap: 8px;
+}

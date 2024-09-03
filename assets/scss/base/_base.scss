@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    // outline: solid 1px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle; //去除圖片多餘的空白
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.5s;
+}
+
+a:hover:not(.logo) {
+    opacity: 0.8;
+  }
+
+body {
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+  }
+  
